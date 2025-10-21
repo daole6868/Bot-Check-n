@@ -260,3 +260,8 @@ client.login(DISCORD_TOKEN).catch(e=>{
   writeLog('❌ Login error: '+e.message);
   process.exit(1);
 });
+const http = require('http');
+const PORT = process.env.PORT || 3000;
+http.createServer((req,res)=>res.end('ok')).listen(PORT,()=>{
+  console.log(`Dummy HTTP server listening on ${PORT}`);
+});
