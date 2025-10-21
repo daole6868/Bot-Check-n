@@ -5,11 +5,12 @@ const { Client, GatewayIntentBits, Partials,
   EmbedBuilder
 } = require('discord.js');
 const fs = require('fs');
+const fsp = fs.promises;
 const path = require('path');
 const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
 const cloudinary = require('cloudinary').v2;
 
-// --- Cloudinary ---
+// --- Cloudinary config ---
 cloudinary.config({
   cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
   api_key: process.env.CLOUDINARY_API_KEY,
@@ -20,32 +21,47 @@ cloudinary.config({
 const DATA_DIR = path.join(__dirname,'data');
 if(!fs.existsSync(DATA_DIR)) fs.mkdirSync(DATA_DIR,{recursive:true});
 const META_FILE = path.join(DATA_DIR,'tickets.json');
+const LOCK_FILE = path.join(DATA_DIR,'tickets.lock');
 
-// --- LOAD & SAVE META ---
 let ticketsMeta = [];
-function loadMeta() {
-  if(fs.existsSync(META_FILE)) {
-    try { ticketsMeta = JSON.parse(fs.readFileSync(META_FILE,'utf-8')); }
-    catch(e){ console.error('Parse meta error',e); ticketsMeta=[]; saveMetaSync();}
-  } else { ticketsMeta=[]; saveMetaSync();}
+
+// --- Lock file helpers ---
+async function acquireLock(){
+  while(fs.existsSync(LOCK_FILE)){
+    await new Promise(r=>setTimeout(r,50));
+  }
+  fs.writeFileSync(LOCK_FILE,'locked');
 }
-function saveMetaSync(){ fs.writeFileSync(META_FILE, JSON.stringify(ticketsMeta,null,2),'utf-8'); }
+function releaseLock(){ if(fs.existsSync(LOCK_FILE)) fs.unlinkSync(LOCK_FILE); }
+
+async function loadMeta(){
+  if(fs.existsSync(META_FILE)){
+    try { ticketsMeta = JSON.parse(fs.readFileSync(META_FILE,'utf-8')); }
+    catch(e){ console.error('Parse meta error',e); ticketsMeta=[]; await saveMeta(); }
+  } else { ticketsMeta=[]; await saveMeta(); }
+}
+
+async function saveMeta(){
+  await acquireLock();
+  try{ fs.writeFileSync(META_FILE, JSON.stringify(ticketsMeta,null,2),'utf-8'); }
+  finally{ releaseLock(); }
+}
 
 function vnNowString(){ return new Date().toLocaleString('vi-VN',{timeZone:'Asia/Ho_Chi_Minh'});}
 function genTicketId(){ return `${Date.now()}_${Math.floor(Math.random()*10000)}`;}
 
-// --- TEMP TICKETS ---
 const tempTickets = new Map();
 
-// ================== READY ==================
+// --- CLIENT ---
 const client = new Client({
   intents:[GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.MessageContent],
   partials:[Partials.Channel]
 });
 
+// ================= READY =================
 client.once(Events.ClientReady, async ()=>{
-  console.log(`🤖 Bot logged in as ${client.user.tag}`);
-  loadMeta();
+  console.log(`🤖 Bot1 logged in as ${client.user.tag}`);
+  await loadMeta();
 
   const guild = await client.guilds.fetch(process.env.GUILD_ID).catch(()=>null);
   if(!guild) return console.error('Guild not found');
@@ -77,7 +93,7 @@ client.once(Events.ClientReady, async ()=>{
   }
 });
 
-// ================== INTERACTION ==================
+// ================= INTERACTIONS =================
 client.on(Events.InteractionCreate, async interaction=>{
   try{
     const guild = interaction.guild;
@@ -118,7 +134,7 @@ client.on(Events.InteractionCreate, async interaction=>{
       return;
     }
 
-    // --- Modal submit ---
+    // Modal submit
     if(interaction.isModalSubmit()){
       // Người bán
       if(interaction.customId==='seller_modal'){
@@ -137,7 +153,7 @@ client.on(Events.InteractionCreate, async interaction=>{
           status:'active', desc, channelId:channel.id, guildId:guild.id, images:[]
         };
         ticketsMeta.push(meta);
-        saveMetaSync();
+        await saveMeta();
         tempTickets.set(interaction.user.id,{...temp,ticketId,uid});
 
         const embed = new EmbedBuilder()
@@ -196,7 +212,7 @@ client.on(Events.InteractionCreate, async interaction=>{
   }
 });
 
-// ================== Upload ảnh lên Cloudinary ==================
+// ================= Upload ảnh lên Cloudinary =================
 client.on(Events.MessageCreate, async msg=>{
   if(msg.author.bot) return;
   const meta = ticketsMeta.find(t=>t.channelId===msg.channelId && t.type==='seller');
@@ -211,12 +227,12 @@ client.on(Events.MessageCreate, async msg=>{
       });
       meta.images.push({url:uploaded.secure_url,public_id:uploaded.public_id,uploadedAt:Date.now()});
     }
-    saveMetaSync();
+    await saveMeta();
     await msg.channel.send(`✅ Ảnh đã được lưu lên Cloudinary.`);
   }
 });
 
-// ================== Xóa ảnh 30 ngày ==================
+// ================= Xóa ảnh >30 ngày =================
 setInterval(async ()=>{
   const now = Date.now();
   for(const t of ticketsMeta){
@@ -225,7 +241,7 @@ setInterval(async ()=>{
     for(const img of oldImgs) await cloudinary.uploader.destroy(img.public_id).catch(()=>{});
     t.images = t.images.filter(img=>now-img.uploadedAt<=30*24*60*60*1000);
   }
-  saveMetaSync();
+  await saveMeta();
 },24*60*60*1000);
 
 // --- LOGIN ---
@@ -235,5 +251,5 @@ client.login(process.env.DISCORD_TOKEN);
 if(process.env.RENDER){
   const http = require('http');
   const PORT = process.env.PORT||3000;
-  http.createServer((req,res)=>res.end('ok')).listen(PORT,()=>console.log(`🌐 HTTP server on port ${PORT}`));
+  http.createServer((req,res)=>res.end('ok')).listen(PORT,()=>console.log(`🌐 Bot1 HTTP server on port ${PORT}`));
 }
