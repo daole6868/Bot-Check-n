@@ -299,3 +299,10 @@ client.login(DISCORD_TOKEN).catch(e => {
   writeLog('❌ Login error: ' + e.message);
   process.exit(1);
 });
+
+// thêm vào cuối index.js (nếu muốn chạy như web service)
+const http = require('http');
+const PORT = process.env.PORT || 3000;
+http.createServer((req, res) => res.end('ok')).listen(PORT, () => {
+  console.log(`HTTP server listening on ${PORT}`);
+});

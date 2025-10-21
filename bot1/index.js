@@ -248,3 +248,10 @@ client.on(Events.MessageCreate, async msg=>{
 
 // --- LOGIN ---
 client.login(process.env.DISCORD_TOKEN);
+
+// thêm vào cuối index.js (nếu muốn chạy như web service)
+const http = require('http');
+const PORT = process.env.PORT || 3000;
+http.createServer((req, res) => res.end('ok')).listen(PORT, () => {
+  console.log(`HTTP server listening on ${PORT}`);
+});
