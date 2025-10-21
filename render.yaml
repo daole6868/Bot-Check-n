@@ -1,0 +1,43 @@
+services:
+  - type: worker
+    name: discord-bot1
+    env: node
+    buildCommand: cd bot1 && npm install
+    startCommand: cd bot1 && npm start
+    envVars:
+      - key: DISCORD_TOKEN
+        sync: false
+      - key: GUILD_ID
+        sync: false
+      - key: ELLER_ANNOUNCE_CHANNEL_ID
+        sync: false 
+      - key: BUYER_ANNOUNCE_CHANNEL_ID
+        sync: false
+      - key: SELLER_CATEGORY_ID
+        sync: false
+      - key: BUYER_CATEGORY_ID
+        sync: false
+      - key: ADMIN_ANNOUNCE_CHANNEL_ID
+        sync: false                               
+      - key: TICKET_CHANNEL_ID
+
+  - type: worker
+    name: discord-bot2
+    env: node
+    buildCommand: cd bot2 && npm install
+    startCommand: cd bot2 && npm start
+    envVars:
+      - key: DISCORD_TOKEN
+        sync: false
+      - key: GUILD_ID
+        sync: false
+      - key: ADMIN_ANNOUNCE_CHANNEL_ID
+        sync: false
+      - key: ADMIN_CATEGORY_ID
+        sync: false
+      - key: ADMIN_CHECK_CHANNEL_ID
+        sync: false
+      - key: ADMIN_ROLE_ID
+        sync: false        
+      - key: BOT1_TICKET_DIR
+        value: ../bot1/data
