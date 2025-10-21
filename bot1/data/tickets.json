@@ -1,446 +1,118 @@
 [
   {
-    "id": "1760966073110_3653",
+    "id": "1761062139570_5687",
     "uid": "12345",
     "type": "seller",
     "authorId": "1428664275798331494",
-    "createdAtISO": "2025-10-20T13:14:33.111Z",
-    "vnTime": "20:14:33 20/10/2025",
-    "folder": "C:\\Bot dis giao hang\\bot1\\data\\tickets\\1760966073110_3653",
+    "createdAtISO": "2025-10-21T15:55:39.570Z",
+    "vnTime": "22:55:39 21/10/2025",
     "status": "active",
-    "desc": "á",
-    "channelId": "1429820031927193661",
+    "desc": "chauw có gì",
+    "channelId": "1430222969237409913",
     "guildId": "1428664870634520687",
-    "adminChannelId": "1429821583760818186"
+    "images": [
+      {
+        "url": "https://res.cloudinary.com/dd040396o/image/upload/v1761062156/tickets/12345/hlya3f4qtrvkb7okrbhg.png",
+        "public_id": "tickets/12345/hlya3f4qtrvkb7okrbhg",
+        "uploadedAt": 1761062157775
+      },
+      {
+        "url": "https://res.cloudinary.com/dd040396o/image/upload/v1761062158/tickets/12345/qfermyiufd9yddiiaosv.png",
+        "public_id": "tickets/12345/qfermyiufd9yddiiaosv",
+        "uploadedAt": 1761062158995
+      },
+      {
+        "url": "https://res.cloudinary.com/dd040396o/image/upload/v1761062159/tickets/12345/ek4j1gqi9tje2iuzlkhu.png",
+        "public_id": "tickets/12345/ek4j1gqi9tje2iuzlkhu",
+        "uploadedAt": 1761062160283
+      },
+      {
+        "url": "https://res.cloudinary.com/dd040396o/image/upload/v1761062160/tickets/12345/bwqpfaj0ekxsoxuiuefc.png",
+        "public_id": "tickets/12345/bwqpfaj0ekxsoxuiuefc",
+        "uploadedAt": 1761062161840
+      }
+    ]
   },
   {
-    "id": "1760966115425_5825",
-    "uid": "12345",
-    "type": "buyer",
-    "authorId": "1428664275798331494",
-    "createdAtISO": "2025-10-20T13:15:15.425Z",
-    "vnTime": "20:15:15 20/10/2025",
-    "folder": "C:\\Bot dis giao hang\\bot1\\data\\tickets\\1760966115425_5825",
-    "status": "active",
-    "channelId": "1429820240820178967",
-    "guildId": "1428664870634520687"
-  },
-  {
-    "id": "1760966145427_5812",
-    "uid": "1234",
-    "type": "buyer",
-    "authorId": "1428664275798331494",
-    "createdAtISO": "2025-10-20T13:15:45.427Z",
-    "vnTime": "20:15:45 20/10/2025",
-    "folder": "C:\\Bot dis giao hang\\bot1\\data\\tickets\\1760966145427_5812",
-    "status": "active",
-    "channelId": "1429820366397902918",
-    "guildId": "1428664870634520687"
-  },
-  {
-    "id": "1760966158584_5245",
-    "uid": "21432143214",
-    "type": "buyer",
-    "authorId": "1428664275798331494",
-    "createdAtISO": "2025-10-20T13:15:58.584Z",
-    "vnTime": "20:15:58 20/10/2025",
-    "folder": "C:\\Bot dis giao hang\\bot1\\data\\tickets\\1760966158584_5245",
-    "status": "active",
-    "channelId": "1429820426749481211",
-    "guildId": "1428664870634520687"
-  },
-  {
-    "id": "1760966428083_4148",
-    "uid": "12345",
-    "type": "buyer",
-    "authorId": "987945388034097203",
-    "createdAtISO": "2025-10-20T13:20:28.083Z",
-    "vnTime": "20:20:28 20/10/2025",
-    "folder": "C:\\Bot dis giao hang\\bot1\\data\\tickets\\1760966428083_4148",
-    "status": "active",
-    "channelId": "1429821537434992692",
-    "guildId": "1428664870634520687"
-  },
-  {
-    "id": "1760967145805_9957",
-    "uid": "0325685",
-    "type": "seller",
-    "authorId": "1428664275798331494",
-    "createdAtISO": "2025-10-20T13:32:25.807Z",
-    "vnTime": "20:32:25 20/10/2025",
-    "folder": "C:\\Bot dis giao hang\\bot1\\data\\tickets\\1760967145805_9957",
-    "status": "active",
-    "desc": "có",
-    "channelId": "1429824526027329636",
-    "guildId": "1428664870634520687",
-    "adminChannelId": "1429828162744750120"
-  },
-  {
-    "id": "1760967810197_1511",
-    "uid": "0325678",
-    "type": "seller",
-    "authorId": "1428664275798331494",
-    "createdAtISO": "2025-10-20T13:43:30.198Z",
-    "vnTime": "20:43:30 20/10/2025",
-    "folder": "C:\\Bot dis giao hang\\bot1\\data\\tickets\\1760967810197_1511",
-    "status": "active",
-    "desc": "có cái gì mà xem",
-    "channelId": "1429827271157350443",
-    "guildId": "1428664870634520687",
-    "adminChannelId": "1429828171871813733"
-  },
-  {
-    "id": "1760967995181_2810",
-    "uid": "0325679",
-    "type": "seller",
-    "authorId": "1428664275798331494",
-    "createdAtISO": "2025-10-20T13:46:35.183Z",
-    "vnTime": "20:46:35 20/10/2025",
-    "folder": "C:\\Bot dis giao hang\\bot1\\data\\tickets\\1760967995181_2810",
-    "status": "active",
-    "desc": "có cái gì mà xem",
-    "channelId": "1429828076530962494",
-    "guildId": "1428664870634520687",
-    "adminChannelId": "1429828175332118673"
-  },
-  {
-    "id": "1760968909651_8637",
-    "uid": "363637",
-    "type": "seller",
-    "authorId": "1428664275798331494",
-    "createdAtISO": "2025-10-20T14:01:49.662Z",
-    "vnTime": "21:01:49 20/10/2025",
-    "folder": "C:\\Bot dis giao hang\\bot1\\data\\tickets\\1760968909651_8637",
-    "status": "active",
-    "desc": "anhem ơi",
-    "channelId": "1429831929901093036",
-    "guildId": "1428664870634520687",
-    "adminChannelId": "1429832131873345667"
-  },
-  {
-    "id": "1760968941497_2626",
-    "uid": "363638",
-    "type": "seller",
-    "authorId": "1428664275798331494",
-    "createdAtISO": "2025-10-20T14:02:21.498Z",
-    "vnTime": "21:02:21 20/10/2025",
-    "folder": "C:\\Bot dis giao hang\\bot1\\data\\tickets\\1760968941497_2626",
-    "status": "active",
-    "desc": "co em",
-    "channelId": "1429832066433810593",
-    "guildId": "1428664870634520687",
-    "adminChannelId": "1429832136470560840"
-  },
-  {
-    "id": "1760969400074_8355",
-    "uid": "36363636",
-    "type": "seller",
-    "authorId": "987945388034097203",
-    "createdAtISO": "2025-10-20T14:10:00.076Z",
-    "vnTime": "21:10:00 20/10/2025",
-    "folder": "C:\\Bot dis giao hang\\bot1\\data\\tickets\\1760969400074_8355",
-    "status": "active",
-    "desc": "Có gí hot không",
-    "channelId": "1429833979531362375",
-    "guildId": "1428664870634520687"
-  },
-  {
-    "id": "1760975492317_3075",
-    "uid": "37373737",
-    "type": "seller",
-    "authorId": "1428664275798331494",
-    "createdAtISO": "2025-10-20T15:51:32.319Z",
-    "vnTime": "22:51:32 20/10/2025",
-    "folder": "C:\\Bot dis giao hang\\bot1\\data\\tickets\\1760975492317_3075",
-    "status": "active",
-    "desc": "không có gì 3737373737",
-    "channelId": "1429859503196606675",
-    "guildId": "1428664870634520687"
-  },
-  {
-    "id": "1760975745916_3127",
-    "uid": "12345",
-    "type": "seller",
-    "authorId": "1428664275798331494",
-    "createdAtISO": "2025-10-20T15:55:45.918Z",
-    "vnTime": "22:55:45 20/10/2025",
-    "folder": "C:\\Bot dis giao hang\\bot1\\data\\tickets\\1760975745916_3127",
-    "status": "archived",
-    "desc": "12345",
-    "channelId": "1429860618793652398",
-    "guildId": "1428664870634520687"
-  },
-  {
-    "id": "1760976554097_8010",
-    "uid": "800000009",
-    "type": "seller",
-    "authorId": "1097391569436418088",
-    "createdAtISO": "2025-10-20T16:09:14.099Z",
-    "vnTime": "23:09:14 20/10/2025",
-    "folder": "C:\\Bot dis giao hang\\bot1\\data\\tickets\\1760976554097_8010",
-    "status": "archived",
-    "desc": "Cày full tevat , up full nhân vật weap 90",
-    "channelId": "1429863762604851422",
-    "guildId": "1428664870634520687"
-  },
-  {
-    "id": "1760977303022_1626",
-    "uid": "12345677",
-    "type": "seller",
-    "authorId": "1428664275798331494",
-    "createdAtISO": "2025-10-20T16:21:43.024Z",
-    "vnTime": "23:21:43 20/10/2025",
-    "folder": "C:\\Bot dis giao hang\\bot1\\data\\tickets\\1760977303022_1626",
-    "status": "archived",
-    "desc": "123 CÓ AI KHÔNG",
-    "channelId": "1429867113517944883",
-    "guildId": "1428664870634520687"
-  },
-  {
-    "id": "1760978735761_3185",
-    "uid": "636363",
-    "type": "seller",
-    "authorId": "1428664275798331494",
-    "createdAtISO": "2025-10-20T16:45:35.763Z",
-    "vnTime": "23:45:35 20/10/2025",
-    "folder": "C:\\Bot dis giao hang\\bot1\\data\\tickets\\1760978735761_3185",
-    "status": "active",
-    "desc": "coc",
-    "channelId": "1429873144264655052",
-    "guildId": "1428664870634520687"
-  },
-  {
-    "id": "1760979064232_2341",
-    "uid": "737373",
-    "type": "seller",
-    "authorId": "1428664275798331494",
-    "createdAtISO": "2025-10-20T16:51:04.233Z",
-    "vnTime": "23:51:04 20/10/2025",
-    "folder": "C:\\Bot dis giao hang\\bot1\\data\\tickets\\1760979064232_2341",
-    "status": "active",
-    "desc": "khoâng",
-    "channelId": "1429874488241164308",
-    "guildId": "1428664870634520687"
-  },
-  {
-    "id": "1760979144189_1580",
-    "uid": "878787",
-    "type": "seller",
-    "authorId": "1428664275798331494",
-    "createdAtISO": "2025-10-20T16:52:24.190Z",
-    "vnTime": "23:52:24 20/10/2025",
-    "folder": "C:\\Bot dis giao hang\\bot1\\data\\tickets\\1760979144189_1580",
-    "status": "active",
-    "desc": "dad",
-    "channelId": "1429874836682965165",
-    "guildId": "1428664870634520687"
-  },
-  {
-    "id": "1760979374138_7057",
-    "uid": "787878",
-    "type": "seller",
-    "authorId": "1428664275798331494",
-    "createdAtISO": "2025-10-20T16:56:14.149Z",
-    "vnTime": "23:56:14 20/10/2025",
-    "folder": "C:\\Bot dis giao hang\\bot1\\data\\tickets\\1760979374138_7057",
-    "status": "active",
-    "desc": "khngoâ",
-    "channelId": "1429875829122531350",
-    "guildId": "1428664870634520687"
-  },
-  {
-    "id": "1760979523308_9691",
+    "id": "1761062870534_8076",
     "uid": "685658",
     "type": "seller",
     "authorId": "1428664275798331494",
-    "createdAtISO": "2025-10-20T16:58:43.310Z",
-    "vnTime": "23:58:43 20/10/2025",
-    "folder": "C:\\Bot dis giao hang\\bot1\\data\\tickets\\1760979523308_9691",
-    "status": "active",
-    "desc": "không",
-    "channelId": "1429876436323274776",
-    "guildId": "1428664870634520687"
-  },
-  {
-    "id": "1760980281579_5681",
-    "uid": "121212",
-    "type": "seller",
-    "authorId": "1428664275798331494",
-    "createdAtISO": "2025-10-20T17:11:21.580Z",
-    "vnTime": "00:11:21 21/10/2025",
-    "folder": "C:\\Bot dis giao hang\\bot1\\data\\tickets\\1760980281579_5681",
-    "status": "active",
-    "desc": "á",
-    "channelId": "1429879630126514186",
-    "guildId": "1428664870634520687"
-  },
-  {
-    "id": "1760980632930_1704",
-    "uid": "123321",
-    "type": "seller",
-    "authorId": "1428664275798331494",
-    "createdAtISO": "2025-10-20T17:17:12.932Z",
-    "vnTime": "00:17:12 21/10/2025",
-    "folder": "C:\\Bot dis giao hang\\bot1\\data\\tickets\\1760980632930_1704",
-    "status": "active",
-    "desc": "a",
-    "channelId": "1429881109432500364",
-    "guildId": "1428664870634520687"
-  },
-  {
-    "id": "1761010755967_3506",
-    "uid": "212232",
-    "type": "seller",
-    "authorId": "1428664275798331494",
-    "createdAtISO": "2025-10-21T01:39:15.968Z",
-    "vnTime": "08:39:15 21/10/2025",
-    "folder": "C:\\Bot dis giao hang\\bot1\\data\\tickets\\1761010755967_3506",
-    "status": "active",
-    "desc": "chào anh em",
-    "channelId": "1430007374634291201",
-    "guildId": "1428664870634520687"
-  },
-  {
-    "id": "1761010839729_9285",
-    "uid": "212232",
-    "type": "seller",
-    "authorId": "1428664275798331494",
-    "createdAtISO": "2025-10-21T01:40:39.730Z",
-    "vnTime": "08:40:39 21/10/2025",
-    "folder": "C:\\Bot dis giao hang\\bot1\\data\\tickets\\1761010839729_9285",
-    "status": "active",
-    "desc": "chưa biết",
-    "channelId": "1430007799374544977",
-    "guildId": "1428664870634520687"
-  },
-  {
-    "id": "1761011719091_7850",
-    "uid": "0325685658",
-    "type": "seller",
-    "authorId": "1428664275798331494",
-    "createdAtISO": "2025-10-21T01:55:19.093Z",
-    "vnTime": "08:55:19 21/10/2025",
-    "folder": "C:\\Bot dis giao hang\\bot1\\data\\tickets\\1761011719091_7850",
+    "createdAtISO": "2025-10-21T16:07:50.534Z",
+    "vnTime": "23:07:50 21/10/2025",
     "status": "active",
     "desc": "chưa có gì",
-    "channelId": "1430011450100940864",
-    "guildId": "1428664870634520687"
+    "channelId": "1430226017796096120",
+    "guildId": "1428664870634520687",
+    "images": [
+      {
+        "url": "https://res.cloudinary.com/dd040396o/image/upload/v1761062888/tickets/685658/bq1hzsziujhxubqfampe.png",
+        "public_id": "tickets/685658/bq1hzsziujhxubqfampe",
+        "uploadedAt": 1761062889346
+      },
+      {
+        "url": "https://res.cloudinary.com/dd040396o/image/upload/v1761062890/tickets/685658/nzb9gbfv2x5gizcmtyla.png",
+        "public_id": "tickets/685658/nzb9gbfv2x5gizcmtyla",
+        "uploadedAt": 1761062891353
+      },
+      {
+        "url": "https://res.cloudinary.com/dd040396o/image/upload/v1761062891/tickets/685658/xaeiu4hzgdg8r2i7chgc.png",
+        "public_id": "tickets/685658/xaeiu4hzgdg8r2i7chgc",
+        "uploadedAt": 1761062892618
+      },
+      {
+        "url": "https://res.cloudinary.com/dd040396o/image/upload/v1761062893/tickets/685658/ggbpkv6wbqszhpag8ep8.png",
+        "public_id": "tickets/685658/ggbpkv6wbqszhpag8ep8",
+        "uploadedAt": 1761062893905
+      }
+    ]
   },
   {
-    "id": "1761011757524_1091",
-    "uid": "0325685658",
+    "id": "1761063048690_9125",
+    "uid": "030201",
     "type": "seller",
     "authorId": "1428664275798331494",
-    "createdAtISO": "2025-10-21T01:55:57.525Z",
-    "vnTime": "08:55:57 21/10/2025",
-    "folder": "C:\\Bot dis giao hang\\bot1\\data\\tickets\\1761011757524_1091",
+    "createdAtISO": "2025-10-21T16:10:48.690Z",
+    "vnTime": "23:10:48 21/10/2025",
     "status": "active",
-    "desc": "đã có thêm map",
-    "channelId": "1430011632674668604",
-    "guildId": "1428664870634520687"
+    "desc": "ssds",
+    "channelId": "1430226741045231771",
+    "guildId": "1428664870634520687",
+    "images": [
+      {
+        "url": "https://res.cloudinary.com/dd040396o/image/upload/v1761063068/tickets/030201/mr02voas355yccqln6tf.png",
+        "public_id": "tickets/030201/mr02voas355yccqln6tf",
+        "uploadedAt": 1761063069140
+      },
+      {
+        "url": "https://res.cloudinary.com/dd040396o/image/upload/v1761063069/tickets/030201/gfeixqs3ndvh51v0o2y6.png",
+        "public_id": "tickets/030201/gfeixqs3ndvh51v0o2y6",
+        "uploadedAt": 1761063070395
+      }
+    ]
   },
   {
-    "id": "1761017238913_2972",
-    "uid": "635635",
+    "id": "1761063184730_6049",
+    "uid": "676453",
     "type": "seller",
     "authorId": "1428664275798331494",
-    "createdAtISO": "2025-10-21T03:27:18.914Z",
-    "vnTime": "10:27:18 21/10/2025",
-    "folder": "C:\\Bot dis giao hang\\bot1\\data\\tickets\\1761017238913_2972",
+    "createdAtISO": "2025-10-21T16:13:04.730Z",
+    "vnTime": "23:13:04 21/10/2025",
     "status": "active",
-    "desc": "có",
-    "channelId": "1430034630525845565",
-    "guildId": "1428664870634520687"
-  },
-  {
-    "id": "1761022173682_8054",
-    "uid": "0325685658",
-    "type": "seller",
-    "authorId": "1428664275798331494",
-    "createdAtISO": "2025-10-21T04:49:33.693Z",
-    "vnTime": "11:49:33 21/10/2025",
-    "folder": "C:\\Bot dis giao hang\\bot1\\data\\tickets\\1761022173682_8054",
-    "status": "active",
-    "desc": "chưa làm",
-    "channelId": "1430055298755858433",
-    "guildId": "1428664870634520687"
-  },
-  {
-    "id": "1761022398958_920",
-    "uid": "0325685658",
-    "type": "seller",
-    "authorId": "1428664275798331494",
-    "createdAtISO": "2025-10-21T04:53:18.959Z",
-    "vnTime": "11:53:18 21/10/2025",
-    "folder": "C:\\Bot dis giao hang\\bot1\\data\\tickets\\1761022398958_920",
-    "status": "active",
-    "desc": "đang làm chưa xong",
-    "channelId": "1430056252406497290",
-    "guildId": "1428664870634520687"
-  },
-  {
-    "id": "1761037477418_4012",
-    "uid": "09090909",
-    "type": "seller",
-    "authorId": "1428664275798331494",
-    "createdAtISO": "2025-10-21T09:04:37.419Z",
-    "vnTime": "16:04:37 21/10/2025",
-    "folder": "C:\\Bot dis giao hang\\bot1\\data\\tickets\\1761037477418_4012",
-    "status": "active",
-    "desc": "test bot 02",
-    "channelId": "1430119495112065126",
-    "guildId": "1428664870634520687"
-  },
-  {
-    "id": "1761042678155_8391",
-    "uid": "03030303",
-    "type": "seller",
-    "authorId": "1428664275798331494",
-    "createdAtISO": "2025-10-21T10:31:18.156Z",
-    "vnTime": "17:31:18 21/10/2025",
-    "folder": "C:\\Bot dis giao hang\\bot1\\data\\tickets\\1761042678155_8391",
-    "status": "active",
-    "desc": "chưa mô tả",
-    "channelId": "1430141298278400110",
-    "guildId": "1428664870634520687"
-  },
-  {
-    "id": "1761043366769_8304",
-    "uid": "0969333",
-    "type": "seller",
-    "authorId": "987945388034097203",
-    "createdAtISO": "2025-10-21T10:42:46.770Z",
-    "vnTime": "17:42:46 21/10/2025",
-    "folder": "C:\\Bot dis giao hang\\bot1\\data\\tickets\\1761043366769_8304",
-    "status": "active",
-    "desc": "Chưa làm",
-    "channelId": "1430144189617799260",
-    "guildId": "1428664870634520687"
-  },
-  {
-    "id": "1761044810675_8649",
-    "uid": "1812033071",
-    "type": "seller",
-    "authorId": "824657616520478780",
-    "createdAtISO": "2025-10-21T11:06:50.676Z",
-    "vnTime": "18:06:50 21/10/2025",
-    "folder": "C:\\Bot dis giao hang\\bot1\\data\\tickets\\1761044810675_8649",
-    "status": "active",
-    "desc": "Full 100% khu gavireh\nFull 100% khu fakkert",
-    "channelId": "1430149690418004120",
-    "guildId": "1428664870634520687"
-  },
-  {
-    "id": "1761055628806_7884",
-    "uid": "080706",
-    "type": "seller",
-    "authorId": "1428664275798331494",
-    "createdAtISO": "2025-10-21T14:07:08.807Z",
-    "vnTime": "21:07:08 21/10/2025",
-    "folder": "C:\\Bot dis giao hang\\bot1\\data\\tickets\\1761055628806_7884",
-    "status": "active",
-    "desc": "ĐANG CHẠY",
-    "channelId": "1430195644244557996",
-    "guildId": "1428664870634520687"
+    "desc": "đag cày",
+    "channelId": "1430227348153827463",
+    "guildId": "1428664870634520687",
+    "images": [
+      {
+        "url": "https://res.cloudinary.com/dd040396o/image/upload/v1761063200/tickets/676453/delhaxftr4psnox3mmha.png",
+        "public_id": "tickets/676453/delhaxftr4psnox3mmha",
+        "uploadedAt": 1761063201131
+      },
+      {
+        "url": "https://res.cloudinary.com/dd040396o/image/upload/v1761063201/tickets/676453/fejp4fhtdcr7yr4tujxf.png",
+        "public_id": "tickets/676453/fejp4fhtdcr7yr4tujxf",
+        "uploadedAt": 1761063202242
+      }
+    ]
   }
 ]
